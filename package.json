@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/hey-listen",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Warning and invariant dev-ex messaging.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,6 +49,10 @@
     "testRegex": "/_tests/.*\\.(ts|js)$",
     "rootDir": "src"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
   "prettier": {
     "singleQuote": true
   }
