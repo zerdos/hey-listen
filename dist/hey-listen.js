@@ -4,10 +4,9 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.heyListen = {}));
 }(this, (function (exports) { 'use strict';
 
-  var _a;
   exports.warning = function () { };
   exports.invariant = function () { };
-  if (typeof process !== "undefined" && ((_a = process === null || process === void 0 ? void 0 : process.env) === null || _a === void 0 ? void 0 : _a.NODE_ENV) !== 'production') {
+  if (typeof process !== "undefined" && process.env.NODE_ENV !== 'production') {
       exports.warning = function (check, message) {
           if (!check && typeof console !== 'undefined') {
               console.warn(message);
